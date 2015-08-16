@@ -1,0 +1,5 @@
+Small unil which uses Freebsd cpuctl interface to read aperf/mperf msr and calculate
+-actual core clock rate
+-how much it is throttled
+
+Not terrebly accurate since cpuctl do not allow to read APERF/MPERF back to back with disabled irqs/preemtion, but can give a general idea is core throttled or not.
